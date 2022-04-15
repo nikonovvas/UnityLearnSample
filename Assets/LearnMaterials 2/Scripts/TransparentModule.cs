@@ -4,8 +4,14 @@ using UnityEngine;
 
 [RequireComponent(typeof(Renderer))]
 [HelpURL("https://docs.google.com/document/d/1Cmm__cbik5J8aHAI6PPaAUmEMF3wAcNo3rpgzsYPzDM/edit?usp=sharing")]
+[System.Serializable]
+
 public class TransparentModule : MonoBehaviour
+
 {
+    [Header("Размер")]
+    [SerializeField]
+    [Min(0)]
     private float changeSpeed;
 
     private float defaultAlpha;
@@ -18,6 +24,7 @@ public class TransparentModule : MonoBehaviour
         defaultAlpha = mat.color.a;
         toDefault = false;
     }
+    [ContextMenu("Запуск изменения объекта")]
 
     public void ActivateModule()
     {
