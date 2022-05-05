@@ -28,7 +28,7 @@ public class DestroyModule : MonoBehaviour
 
     private IEnumerator DestroyRandomChildObjectCoroutine()
     {
-        while (myTransform.childCount > minimalDestroyingObjectsCount )
+        while (myTransform.childCount > minimalDestroyingObjectsCount)
         {
             int index = Random.Range(0, myTransform.childCount - 1);
             Destroy(myTransform.GetChild(index).gameObject);
