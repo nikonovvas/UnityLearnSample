@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Copier : Use
+public class Copier : SampleScript
 {
     [SerializeField]
     private GameObject target;
@@ -15,9 +15,10 @@ public class Copier : Use
     private Vector3 location = new Vector3(0, 0, 0);
 
     [ContextMenu("Use")]
-    public void Use()
+    public override void Use()
+       
     {
-        Copy();
+        Copy();       
     }
 
     public void Copy()
