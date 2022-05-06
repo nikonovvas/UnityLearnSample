@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotation : Use
+public class Rotation : SampleScript
 {
 
     [SerializeField]
@@ -32,10 +32,10 @@ public class Rotation : Use
             }
         }
     }
+
     [ContextMenu("Запуск")]
-    public  void Use()
+    public override void Use()
     {
         rotateting = true;
-
     }
 }
