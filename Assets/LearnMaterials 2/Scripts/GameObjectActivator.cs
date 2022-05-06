@@ -6,7 +6,7 @@ using UnityEngine;
 /// </summary>
 [HelpURL("https://docs.google.com/document/d/1GP4_m0MzOF8L5t5pZxLChu3V_TFIq1czi1oJQ2X5kpU/edit?usp=sharing")]
 [System.Serializable]
-public class GameObjectActivator : MonoBehaviour
+public class GameObjectActivator : SampleScript
 {
     [SerializeField]
     private List<StateContainer> targets;
